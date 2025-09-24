@@ -6,11 +6,13 @@ const Perks = () => {
     <div className="flex flex-col lg:flex-row w-[95%] lg:w-[70%] mx-auto mt-12 gap-8 items-center">
       {/* Image Section */}
       <div className="w-full lg:w-1/2 flex justify-center">
-        <img
-          src="https://cdn.wallpapersafari.com/44/55/kp50Ri.jpg"
-          alt="Perks"
-          className="w-full max-w-[370px] h-[380px] mt-2 rounded-md rounded-br-4xl object-cover"
-        />
+        <div className="w-full max-w-[370px] aspect-[4/5] mt-2">
+          <img
+            src="https://cdn.wallpapersafari.com/44/55/kp50Ri.jpg"
+            alt="Perks"
+            className="w-full h-full rounded-md rounded-br-4xl object-cover"
+          />
+        </div>
       </div>
 
       {/* Content Section */}
@@ -22,7 +24,8 @@ const Perks = () => {
 
           <div className="pt-3 mt-2">
             <p className="text-sm md:text-base">
-              Design Products that win in the market. We help you redefine <br className="hidden sm:block" /> 
+              Design Products that win in the market. We help you redefine{" "}
+              <br className="hidden sm:block" />
               the way you compete and the value you deliver.
             </p>
           </div>
@@ -60,7 +63,6 @@ const Perks = () => {
 };
 
 export default Perks;
-
 
 
 
